@@ -1,5 +1,4 @@
 # jsp-tiles
-Srping Boot 2 + JSP + Tiles
 
 Spring Boot : 2.2.6
 Java : 8

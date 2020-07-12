@@ -45,6 +45,7 @@ dependencies {
     compile group: 'javax.servlet', name: 'jstl', version: '1.2'
     // Tiles 3
     compile group: 'org.apache.tiles', name: 'tiles-jsp', version: '3.0.+'
+
 }
 
 test {

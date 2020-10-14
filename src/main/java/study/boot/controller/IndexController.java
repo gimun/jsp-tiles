@@ -65,6 +65,26 @@ public class IndexController {
 
     @RequestMapping(value="/test/file")
     public String fileTesting(){
-        return "test/test_file";
+        return "test/file";
+    }
+
+    @RequestMapping(value="/test/file2")
+    public String fileTesting2(){
+        return "test/file2";
+    }
+
+    @RequestMapping(value="/test/file3")
+    public String fileTesting3(){
+        return "test/file3";
+    }
+
+    @RequestMapping(value="/test/sortable")
+    public String excelTesting(){
+        return "test/sortable";
+    }
+
+    @RequestMapping(value="/gageChart")
+    public String gageChart(){
+        return "test/gageChart";
     }
 }

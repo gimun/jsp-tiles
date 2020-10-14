@@ -1,6 +1,8 @@
 package study.boot.vo;
 
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
 
 import javax.validation.constraints.*;
 
@@ -12,6 +14,7 @@ public class ValidationVO {
 
     @Positive(message = "가격은 숫자만 입력 가능하며, 필수 입력 값입니다.")
     @Min(value = 1000, message = "가격은 1,000 원 이상 입력해주세요.")
+    @Setter(AccessLevel.NONE)
     private int price;
 
     @NotBlank
@@ -26,11 +29,18 @@ public class ValidationVO {
     @Size(min = 8)
     private String startDt;
 
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy.MM.dd", timezone = "Asia/Seoul")
+//    @JsonFormat(pattern = "yyyy.MM.dd")
+//    private LocalDate birthDay;
+
+//    @DateTimeFormat(pattern = "yyyy.MM.dd")
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy.MM.dd", timezone = "Asia/Seoul")
+//    private LocalDateTime regDt;
 
 
 /****************************************************************
  (*필수) : 필수 입력 체크
- 설명 : 검증할 Controller 의 매개변수에 @Valid 어노테이션 선언
+ 설명 : 검증할 Controller의 VO 앞에 @Valid 어노테이션 선언
  ex) @Valid ValidationVO validationVO
  ****************************************************************/
 

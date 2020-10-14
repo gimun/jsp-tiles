@@ -5,8 +5,8 @@
     <title>Index Page</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
-        var prodList = new Array();
-        var prodMap = new Map();
+        let prodList = new Array();
+        let prodMap = new Map();
         <c:forEach var="i" items="${data}">
             prodMap.set('${i.prod}', ${i.price});
         </c:forEach>

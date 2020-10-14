@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Tiles Page!!</title> <!--타이틀이 null인 경우에는 무시한다-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
     <tiles:insertAttribute name="header" />
